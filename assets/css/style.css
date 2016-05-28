@@ -12,9 +12,17 @@ div{
 #wrapper{
 	text-align: center;
 	width: 500px;
-	height: 500px;
+	height: 625px;
 	margin: 50px auto;
 	background-color: #DDDDDD;
+}
+
+#displayTimer{
+	position: relative;
+	bottom: 50px;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
 }
 
 .shown{
@@ -25,9 +33,9 @@ div{
 	display: none;
 }
 
-#resetbutton{
-	position: absolute;
-	left: 100px;
+#resetButton{
+	position: relative;
+	margin: auto;
 }
 
 button{
