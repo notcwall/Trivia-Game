@@ -51,8 +51,6 @@ function playGame(){
 	if(currentQuestionIndex < questionBank.length){
 		if(hasChosenAnswer == false){
 			hasChosenAnswer = true;
-			clearInterval(displayTimer);
-			clearTimeout(timer);
 			timer = setTimeout(playGame, 1000 * 4);
 			incorrectGuesses++;
 			$('#questionDisplay').html('<h2>Out of time<br>Correct Answer: ' + questionBank[currentQuestionIndex].correctAnswer);
@@ -60,8 +58,6 @@ function playGame(){
 		}
 		else{
 			timerVal = 10;
-			clearInterval(displayTimer);
-			clearTimeout(timer);
 			timer = setTimeout(playGame, 1000 * 10);
 			displayTimer = setInterval(countDown, 1000);
 			hasChosenAnswer = false;
@@ -74,7 +70,6 @@ function playGame(){
 				}
 				$('.answerChoice').on('click', function(){
 					hasChosenAnswer = true;
-					clearInterval(displayTimer);
 					clearTimeout(timer);
 					timer = setTimeout(playGame, 1000 * 4)
 					if($(this).text() == questionBank[currentQuestionIndex].correctAnswer){
@@ -90,8 +85,6 @@ function playGame(){
 				});
 			}
 			else{
-				clearInterval(displayTimer);
-				clearTimeout(timer);
 				$('#questionDisplay').removeClass();
 				$('#questionDisplay').addClass('hidden');
 				$('#endDisplay').removeClass();
@@ -104,8 +97,6 @@ function playGame(){
 		}
 	}
 	else{
-		clearInterval(displayTimer);
-		clearTimeout(timer);
 		$('#questionDisplay').removeClass();
 		$('#questionDisplay').addClass('hidden');
 		$('#endDisplay').removeClass();
@@ -119,8 +110,6 @@ function playGame(){
 
 
 $('#startButton').on('click', function(){
-	clearInterval(displayTimer);
-	clearTimeout(timer);
 	$('#startDisplay').removeClass();
 	$('#startDisplay').addClass('hidden');
 	$('#questionDisplay').removeClass();
@@ -131,8 +120,6 @@ $('#startButton').on('click', function(){
 });
 
 $('#resetButton').on('click', function(){
-	clearInterval(displayTimer);
-	clearTimeout(timer);
 	$('#resetButton').removeClass();
 	$('#resetButton').addClass('hidden');
 	$('#questionDisplay').removeClass();
