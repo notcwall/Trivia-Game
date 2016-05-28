@@ -1,7 +1,51 @@
+body{
+	font-family: sans-serif;
+	background-color: #AA0000;
+	line-height: 50px;
+	font-weight: bold;
+}
+
+div{
+	padding: 20px;
+}
+
+#wrapper{
+	text-align: center;
+	width: 500px;
+	height: 500px;
+	margin: 50px auto;
+	background-color: #DDDDDD;
+}
+
 .shown{
 	display: block;
 }
 
 .hidden{
 	display: none;
+}
+
+#resetbutton{
+	position: absolute;
+	left: 100px;
+}
+
+button{
+	width: 200px;
+	height: 50px;
+	margin: 10px 0;
+	background-color: #000000;
+	color: #FFFFFF;
+	border: none;
+	font-size: 20px;
+}
+
+h1{
+	font-size: 40px;
+	font-family: Limelight;
+}
+
+h2{
+	font-size: 30px;
+	margin-bottom: 20px;
 }

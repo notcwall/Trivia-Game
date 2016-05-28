@@ -4,15 +4,20 @@
 		<title>Trivia Game</title>
 		<link href="assets/css/reset.css" rel="stylesheet" type="text/css">
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div class="shown" id="startDisplay">
-			<h1>Trivia Game: theme goes here</h1>
-			<button id="startButton">Start</button>
-		</div>
-		<div class="hidden" id="questionDisplay"></div>
-		<div class="hidden" id="endDisplay">
-			<button id="resetButton">Reset</button>
+		<div id="wrapper">
+			<div class="shown" id="startDisplay">
+				<h1>Trivia: Movie Quotes</h1>
+				<br>
+				<h2>You have 10 seconds to answer each question.</h2>
+				<button id="startButton">Start</button>
+			</div>
+			<div class="hidden" id="questionDisplay"></div>
+			<div class="hidden" id="endDisplay">
+			</div>
+			<button class="hidden" id="resetButton">Reset</button>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<script src="assets/javascript/app.js"></script>
